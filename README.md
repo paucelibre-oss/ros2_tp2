@@ -20,21 +20,3 @@ source install/setup.bash
 ```
 
 Con `--symlink-install`, si se modifica algo de los `.py`, no hace falta recompilar — solo reiniciar el nodo. Los cambios en los `.srv` / `.action` sí piden un `colcon build` de nuevo.
-
-## Estructura del repositorio
-
-```
-ros2_ws/
-└── src/
-    ├── tp_interfaces/
-    │   ├── srv/ResetCounter.srv
-    │   └── action/RepublishText.action
-    ├── tp_ejercicio1/
-    │   ├── tp_ejercicio1/counter_publisher.py
-    │   ├── tp_ejercicio1/counter_subscriber.py
-    │   └── launch/counter.launch.py
-    └── tp_ejercicio2/
-        ├── tp_ejercicio2/text_action_server.py
-        ├── tp_ejercicio2/text_action_client.py
-        └── launch/republisher.launch.py
-```
