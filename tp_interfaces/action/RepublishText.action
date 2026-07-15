@@ -1,0 +1,8 @@
+# Goal: el texto completo que se quiere procesar
+string text
+---
+# Result: se informa si se pudo procesar el texto completo
+bool success
+---
+# Feedback: cada palabra que se va enviando, una por una, a 1Hz
+string current_word
